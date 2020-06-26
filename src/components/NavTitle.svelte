@@ -13,8 +13,8 @@
     whoami: "Who is he?",
     projects: "What has he been up to?",
     technos: "What technologies are up his sleeve?",
-    education: "My Education & Languages",
-    hobbies: "My Hobbies",
+    education: "My Education",
+    hobbies: "My Languages & Hobbies",
     contact: "Contact Me"
   };
 </script>

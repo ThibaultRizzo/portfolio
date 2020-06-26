@@ -1,4 +1,5 @@
 import sirv from "sirv";
+import { json } from "body-parser";
 import polka from "polka";
 import compression from "compression";
 import * as sapper from "@sapper/server";
@@ -8,6 +9,7 @@ const dev = NODE_ENV === "development";
 
 polka() // You can also use Express
   .use(
+    json(),
     compression({ threshold: 0 }),
     sirv("static", { dev }),
     sapper.middleware()

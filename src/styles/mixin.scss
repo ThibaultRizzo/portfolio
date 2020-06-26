@@ -1,0 +1,21 @@
+@mixin shadowed-card($color) {
+  border: 2px solid $color;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 0 10px;
+  margin: 40px;
+  box-shadow: 15px 20px $color;
+}
+
+@mixin shadowed-card-and-header($color) {
+  @include shadowed-card($color) .card__header {
+    position: relative;
+    background-color: white;
+    top: -10px;
+    height: 20px;
+    padding: 0 10px;
+  }
+}
